@@ -1,6 +1,7 @@
 // import { Link } from "gatsby"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
+import "./footer.css"
 
 const footer = ({ siteTitle }) => {
   return (

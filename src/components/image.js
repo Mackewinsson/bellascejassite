@@ -10,7 +10,7 @@ const Image = ({ name }) => {
         query GET_IMAGE {
           logo: file(relativePath: { eq: "tebori.png" }) {
             childImageSharp {
-              fluid(maxWidth: 800) {
+              fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid
               }
             }
