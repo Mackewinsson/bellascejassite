@@ -29,11 +29,11 @@ const Header = ({ siteTitle }) => (
         </Link>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Link to="/page-2/">
-              <NavLink href="/page-2/">Microblading</NavLink>
+            <Link to="/academia">
+              <NavLink href="/academia">Academia</NavLink>
             </Link>
-            <Link to="/page-2/">
-              <NavLink href="/page-2/">Reservas</NavLink>
+            <Link to="/reservas">
+              <NavLink href="/reservas">Reservas</NavLink>
             </Link>
           </Nav>
         </Navbar.Collapse>
