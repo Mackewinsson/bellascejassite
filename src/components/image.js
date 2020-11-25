@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import "./image.css"
 
 const Image = ({ name }) => {
   return (
