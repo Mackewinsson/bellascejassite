@@ -1,0 +1,5 @@
+#gatsby-focus-wrapper > div > picture > img {
+    position: relative !important;
+    margin-top: 200px;
+    width: 50%;
+  }
