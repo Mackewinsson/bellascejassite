@@ -18,5 +18,4 @@ span.nav-link {
 span.nav-link:hover {
   text-decoration: none !important;
   font-size: medium !important;
-  transition: 1s ease-in font-size;
 }

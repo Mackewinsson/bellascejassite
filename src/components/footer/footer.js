@@ -9,7 +9,12 @@ const footer = ({ siteTitle }) => {
       <Container>
         <Row className="text-center light">
           <Col>
-            <a href="https://www.mackewinsson.pro" style={{ color: "white" }}>
+            <a
+              href="https://www.linkedin.com/in/mackewinsson-palencia-29876b105/"
+              style={{ color: "white" }}
+              target="_blank"
+              rel="noreferrer"
+            >
               By Mackewinsson
             </a>
           </Col>
