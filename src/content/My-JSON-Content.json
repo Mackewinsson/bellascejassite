@@ -1,0 +1,49 @@
+{
+  "courses": [
+    {
+      "id": "5401",
+      "name": "Curso de microblading",
+      "price": 500000,
+      "date": "19 y 20 de diciembre 2020",
+      "place": "Santiago",
+      "description": "Curso de microblading presencial, practico con kit y materiales incluidos",
+      "teacher": "Yulexi Marquez"
+    },
+    {
+      "id": "5402",
+      "name": "Curso de micropigmentacion",
+      "price": 800000,
+      "date": "No disponible",
+      "place": "Santiago",
+      "description": "Curso de micropigmentación presencial, practico con kit y materiales incluidos",
+      "teacher": "Yulexi Marquez"
+    },
+    {
+      "id": "5403",
+      "name": "Curso de microblading",
+      "price": 800000,
+      "date": "27 y 28 de diciembre 2020",
+      "place": "Concepción",
+      "description": "Curso de microblading presencial, practico con kit y materiales incluidos",
+      "teacher": "Yulexi Marquez"
+    },
+    {
+      "id": "5404",
+      "name": "Curso de extenciones de pestañas",
+      "price": 300000,
+      "date": "Proximamente",
+      "place": "Santiago",
+      "description": "Curso de extensiones de pestañas presencial con materiales incluidos",
+      "teacher": "Yulexi Marquez"
+    },
+    {
+      "id": "5405",
+      "name": "Curso de perfilado de cejas",
+      "price": 200000,
+      "date": "Proximamente",
+      "place": "Santiago",
+      "description": "Curso de perfilado de cejas presencial con materiales incluidos",
+      "teacher": "Yulexi Marquez"
+    }
+  ]
+}

@@ -1,13 +1,16 @@
 import React from "react"
 
-import Image from "../components/image"
+import Tebori from "../components/img/tebori"
+import Logo from "../components/img/logo"
+
 import SEO from "../components/seo"
 import "./index.css"
 
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <Image name="logo" />
+    <Logo name="logo" />
+    <Tebori name="tebori" />
   </>
 )
 
