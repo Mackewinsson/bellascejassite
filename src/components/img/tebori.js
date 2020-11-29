@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-// import "./tebori.css"
+import "./tebori.css"
 
 const Tebori = ({ name }) => {
   return (
@@ -10,7 +10,7 @@ const Tebori = ({ name }) => {
         query GET_TEBORI {
           tebori: file(relativePath: { eq: "tebori.png" }) {
             childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
