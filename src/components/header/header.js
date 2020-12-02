@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Nav, Navbar } from "react-bootstrap"
-import "./header.css"
+import StyledLink from "../common/Link"
 
 const Header = ({ siteTitle }) => (
   <Navbar
@@ -13,18 +12,18 @@ const Header = ({ siteTitle }) => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="m-auto">
-        <Link to="/">
+        <StyledLink to="/">
           <span className="nav-link">Home</span>
-        </Link>
-        <Link to="/academia">
+        </StyledLink>
+        <StyledLink to="/academia">
           <span className="nav-link">Academia</span>
-        </Link>
-        <Link to="/reservas">
+        </StyledLink>
+        <StyledLink to="/reservas">
           <span className="nav-link">Reservas</span>
-        </Link>
-        <Link to="/microblading">
+        </StyledLink>
+        <StyledLink to="/microblading">
           <span className="nav-link">Microblading</span>
-        </Link>
+        </StyledLink>
         <Nav.Link
           href="https://api.whatsapp.com/send?phone=56990422712&text=Hola vengo de la pagina web y quiero mas informacion Bellas Cejas"
           target="_blank"

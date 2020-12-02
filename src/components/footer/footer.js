@@ -1,26 +1,37 @@
 // import { Link } from "gatsby"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import "./footer.css"
+import StyledLink from "../common/Link"
+import styled from "styled-components"
+
+const FooterMenu = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #212121;
+  width: 100%;
+  min-height: 100px;
+`
 
 const footer = ({ siteTitle }) => {
   return (
-    <footer className="footer">
+    <FooterMenu className="footer">
       <Container>
         <Row className="text-center light">
           <Col>
-            <a
-              href="https://www.linkedin.com/in/mackewinsson-palencia-29876b105/"
-              style={{ color: "white" }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              By Mackewinsson
-            </a>
+            <StyledLink to="/">HOME</StyledLink>
+          </Col>
+          <Col>
+            <StyledLink to="/academia">ACADEMIA</StyledLink>
+          </Col>
+          <Col>
+            <StyledLink to="/reservas">RESERVAS</StyledLink>
           </Col>
         </Row>
       </Container>
-    </footer>
+    </FooterMenu>
   )
 }
 

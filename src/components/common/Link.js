@@ -1,4 +1,8 @@
-span.nav-link {
+import styled from "styled-components"
+import { Link } from "gatsby"
+import React from "react"
+
+const StyledLink = styled(props => <Link {...props} />)`
   font-weight: bold;
   background-image: linear-gradient(
     to right,
@@ -13,9 +17,8 @@ span.nav-link {
   color: transparent;
   -webkit-background-clip: text;
   margin-right: 20px;
-}
-
-span.nav-link:hover {
-  text-decoration: none !important;
-  font-size: medium !important;
-}
+  &:hover {
+    color: white;
+  }
+`
+export default StyledLink
