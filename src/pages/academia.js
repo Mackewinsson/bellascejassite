@@ -28,11 +28,13 @@ const Academia = () => {
           <Col xs={12} className="text-center justify-content-center">
             <h2 className="mb-5">Academia</h2>
             <h4>Cursos disponibles</h4>
-            <small>By Yulexi Marquez</small>
+            <small>By Yulexi Márquez</small>
+          </Col>
+          <Col xs={12}>
+            <CardDeck className="mt-5">{coursesCards}</CardDeck>
           </Col>
         </Row>
       </Container>
-      <CardDeck className="mt-5">{coursesCards}</CardDeck>
     </>
   )
 }
