@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledLogo = styled(Img)`
-  margin-top: 150px;
+  margin-top: 10vh;
 `
 
 const Logo = ({ name }) => {
@@ -15,7 +15,7 @@ const Logo = ({ name }) => {
           query GET_LOGO {
             logo: file(relativePath: { eq: "logo.png" }) {
               childImageSharp {
-                fluid(maxWidth: 500) {
+                fluid(maxWidth: 200) {
                   ...GatsbyImageSharpFluid
                 }
               }

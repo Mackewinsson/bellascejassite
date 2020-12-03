@@ -20,7 +20,7 @@ const Tebori = ({ name }) => {
         query GET_TEBORI {
           tebori: file(relativePath: { eq: "tebori.png" }) {
             childImageSharp {
-              fluid(maxWidth: 500) {
+              fluid(maxWidth: 380) {
                 ...GatsbyImageSharpFluid
               }
             }
