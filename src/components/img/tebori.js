@@ -4,7 +4,13 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledTebori = styled(Img)`
-  width: 50%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* transform: rotate(-90deg);
+  z-index: -200;
+  position: absolute !important;
+  bottom: 300px; */
 `
 
 const Tebori = ({ name }) => {

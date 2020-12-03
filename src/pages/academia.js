@@ -1,7 +1,7 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, CardDeck } from "react-bootstrap"
 import Card from "../components/academiaComponentes/cards"
 import coursesData from "../content/My-JSON-Content.json"
 
@@ -24,15 +24,15 @@ const Academia = () => {
     <>
       <SEO title="Academia" />
       <Container>
-        <Row className="text-center p-5">
-          <Col>
-            <h2>Academia</h2>
+        <Row className="pt-5 text-center">
+          <Col xs={12} className="text-center justify-content-center">
+            <h2 className="mb-5">Academia</h2>
+            <h4>Cursos disponibles</h4>
+            <small>By Yulexi Marquez</small>
           </Col>
         </Row>
       </Container>
-      <Row className="row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
-        {coursesCards}
-      </Row>
+      <CardDeck className="mt-5">{coursesCards}</CardDeck>
     </>
   )
 }

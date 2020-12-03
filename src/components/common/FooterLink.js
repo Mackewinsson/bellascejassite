@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import React from "react"
 
-const StyledLink = styled(props => <Link {...props} />)`
+const StyledFooterLink = styled(props => <Link {...props} />)`
   font-weight: bold;
   background-image: linear-gradient(
     to right,
@@ -16,11 +16,21 @@ const StyledLink = styled(props => <Link {...props} />)`
   );
   color: transparent;
   -webkit-background-clip: text;
-
+  display: flex !important;
+  flex-grow: 1;
+  overflow: hidden;
+  min-width: 50px;
+  white-space: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   //Hover styles
   &:hover {
     color: white;
     text-decoration: none;
   }
+  > span {
+    display: flex;
+  }
 `
-export default StyledLink
+export default StyledFooterLink
