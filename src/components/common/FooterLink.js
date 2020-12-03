@@ -4,7 +4,7 @@ import React from "react"
 
 const StyledFooterLink = styled(props => <Link {...props} />)`
   font-weight: bold;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     #462523 0,
     #cb9b51 22%,
@@ -15,7 +15,8 @@ const StyledFooterLink = styled(props => <Link {...props} />)`
     #462523 100%
   );
   color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+  color: white;
   display: flex !important;
   flex-grow: 1;
   overflow: hidden;
