@@ -1,7 +1,7 @@
 import React from "react"
 import { Card } from "react-bootstrap"
 import styled from "styled-components"
-import StyledButton from "../common/Button"
+import StyledLink from "../common/StyledLink"
 
 const StyledCard = styled(Card)`
   border-radius: 25px;
@@ -20,7 +20,15 @@ const StyledCard = styled(Card)`
   }
 `
 
-const cards = ({ name, price, place, date, description, teacher }) => {
+const CourseCard = ({
+  name,
+  price,
+  place,
+  date,
+  description,
+  teacher,
+  path,
+}) => {
   return (
     <StyledCard border="primary">
       <Card.Header>{name}</Card.Header>
@@ -37,16 +45,10 @@ const cards = ({ name, price, place, date, description, teacher }) => {
         <small>Profesora: {teacher}</small>
       </Card.Body>
       <Card.Footer className="d-flex justify-content-center">
-        <StyledButton
-          href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de [${name}] Bellas Cejas Academy`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Reserva
-        </StyledButton>
+        <StyledLink to={path}>VER DETALLES</StyledLink>
       </Card.Footer>
     </StyledCard>
   )
 }
 
-export default cards
+export default CourseCard
