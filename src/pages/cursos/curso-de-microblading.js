@@ -125,6 +125,7 @@ const cursodemicroblading = () => {
                   bullets={el.bullets}
                   teacher={curso.teacher}
                   key={el.name}
+                  courseName={curso.name}
                 />
               )
             })}

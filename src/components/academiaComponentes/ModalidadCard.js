@@ -30,9 +30,10 @@ const ModalidadCard = ({
   price,
   bullets,
   teacher,
+  courseName,
 }) => {
   return (
-    <StyledCard border="primary">
+    <StyledCard border="primary" className="mt-5">
       <Card.Header>{name}</Card.Header>
       <Card.Body>
         <h6 className="mb-4">Beneficios</h6>
@@ -58,7 +59,7 @@ const ModalidadCard = ({
       </Card.Body>
       <Card.Footer className="d-flex justify-content-center">
         <StyledButton
-          href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de [${name}] Bellas Cejas Academy`}
+          href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de ${courseName} [${name}] Bellas Cejas Academy`}
           target="_blank"
           rel="noreferrer"
         >
