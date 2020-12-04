@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
         />
+        <meta name="HandheldFriendly" content="true" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

@@ -15,7 +15,7 @@ const Logo = ({ name }) => {
           query GET_LOGO {
             logo: file(relativePath: { eq: "logo.png" }) {
               childImageSharp {
-                fluid(maxWidth: 200) {
+                fluid(maxWidth: 400) {
                   ...GatsbyImageSharpFluid
                 }
               }
