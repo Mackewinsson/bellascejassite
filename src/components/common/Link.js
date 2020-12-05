@@ -16,7 +16,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   );
   color: transparent;
   -webkit-background-clip: text; */
-  color: white;
+  color: #ffd700;
 
   //Hover styles
   &:hover {

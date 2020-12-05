@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Icon from "./Icon"
 import {
   faHome,
-  faPen,
+  faCalendar,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons"
 
@@ -31,7 +31,7 @@ const footer = ({ siteTitle }) => {
         <span>ACADEMIA</span>
       </StyledFooterLink>
       <StyledFooterLink to="/reservas">
-        <Icon icon={faPen} />
+        <Icon icon={faCalendar} />
         <span>RESERVAS</span>
       </StyledFooterLink>
     </FooterMenu>

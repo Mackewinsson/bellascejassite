@@ -3,19 +3,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const StyledFooterLink = styled(props => <Link {...props} />)`
-  font-weight: bold;
-  /* background-image: linear-gradient(
-    to right,
-    #462523 0,
-    #cb9b51 22%,
-    #f6e27a 45%,
-    #f6f2c0 50%,
-    #f6e27a 55%,
-    #cb9b51 78%,
-    #462523 100%
-  );
-  color: transparent;
-  -webkit-background-clip: text; */
+  font-weight: lighter;
   color: white;
   display: flex !important;
   flex-grow: 1;
@@ -27,9 +15,13 @@ const StyledFooterLink = styled(props => <Link {...props} />)`
   justify-content: center;
   //Hover styles
   &:hover {
-    color: white;
+    color: #ffd700;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.1em;
+    border: 1px solid #ffd700;
   }
+
   > span {
     display: flex;
   }

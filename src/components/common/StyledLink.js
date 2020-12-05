@@ -4,7 +4,9 @@ import React from "react"
 
 const StyledLink = styled(props => <Link {...props} />)`
   background-color: black;
-  padding: 10px;
+  padding: 15px;
   color: white;
+  border-radius: 15px;
+  font-weight: bold;
 `
 export default StyledLink

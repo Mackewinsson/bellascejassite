@@ -7,8 +7,8 @@ import {
   ResponsiveEmbed,
   CardDeck,
 } from "react-bootstrap"
-import ModalidadCard from "../../components/academiaComponentes/ModalidadCard"
-import coursesData from "../../content/My-JSON-Content.json"
+import ModalidadCard from "../components/academiaComponentes/ModalidadCard"
+import coursesData from "../content/My-JSON-Content.json"
 
 const curso = coursesData.courses[0]
 const modalidad = curso.modalidades
