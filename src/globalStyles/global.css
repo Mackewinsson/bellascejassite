@@ -17,3 +17,18 @@ main {
   outline: none;
   box-shadow: none;
 }
+
+.btn-outline-warning {
+  color: #ffd700;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-outline-warning:hover {
+  color: black;
+  background-color: #ffd700;
+  outline: black;
+  box-shadow: black;
+  font-weight: bold;
+}

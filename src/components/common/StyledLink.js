@@ -8,5 +8,9 @@ const StyledLink = styled(props => <Link {...props} />)`
   color: white;
   border-radius: 15px;
   font-weight: bold;
+  &:hover {
+    color: #ffd700;
+    text-decoration: none;
+  }
 `
 export default StyledLink

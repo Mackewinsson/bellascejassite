@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Bellas Cejas`,
-    description: `Tus Cejas en manos de expertos`,
+    description: `Tus cejas en manos de expertos`,
     author: `@mackewinsson`,
   },
   plugins: [

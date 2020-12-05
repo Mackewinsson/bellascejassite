@@ -11,13 +11,13 @@ import ModalidadCard from "../components/academiaComponentes/ModalidadCard"
 import coursesData from "../content/My-JSON-Content.json"
 import SEO from "../components/seo"
 
-const curso = coursesData.courses[0]
+const curso = coursesData.courses[1]
 const modalidad = curso.modalidades
 
-const cursodemicroblading = () => {
+const cursodemicrobladingojoslabios = () => {
   return (
     <>
-      <SEO title="Curso de Microblading" />
+      <SEO title="Curso de micropigmentación" />
       <Container>
         <Row className="pt-5 text-center">
           <Col xs={12} className="text-center justify-content-center">
@@ -71,7 +71,6 @@ const cursodemicroblading = () => {
                 </Col>
               )
             })}
-            <small className="mb-5">↑ Haz clic para ir a los valores ↑</small>
           </Col>
           <Col xs={12}>
             {/* PARA QUIEN ES ESTE CURSO */}
@@ -133,7 +132,6 @@ const cursodemicroblading = () => {
                     key={el.name}
                     courseName={curso.name}
                     id={el._ID}
-                    link={el.flow}
                   />
                 )
               })}
@@ -145,4 +143,4 @@ const cursodemicroblading = () => {
   )
 }
 
-export default cursodemicroblading
+export default cursodemicrobladingojoslabios

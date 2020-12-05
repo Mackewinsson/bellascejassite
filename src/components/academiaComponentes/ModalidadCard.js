@@ -1,7 +1,8 @@
 import React from "react"
-import { Card } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 import styled from "styled-components"
 import StyledButton from "../common/Button"
+import WebpPay from "../img/webpay"
 
 const StyledCard = styled(Card)`
   border-radius: 25px;
@@ -31,10 +32,14 @@ const ModalidadCard = ({
   bullets,
   teacher,
   courseName,
+  id,
+  link,
 }) => {
   return (
     <StyledCard border="primary" className="mt-5">
-      <Card.Header>{name}</Card.Header>
+      <Card.Header className="text-uppercase font-weight-bold" id={`${id}`}>
+        {name}
+      </Card.Header>
       <Card.Body>
         <h6 className="mb-4">Beneficios</h6>
         <ul className="text-left">
@@ -62,9 +67,21 @@ const ModalidadCard = ({
           href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de ${courseName} [${name}] Bellas Cejas Academy`}
           target="_blank"
           rel="noreferrer"
+          className="mr-5"
         >
-          Reserva
+          + Info
         </StyledButton>
+        <StyledButton
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="mr-5 btn btn-outline-warning"
+        >
+          Matricularse
+        </StyledButton>
+        <Col>
+          <WebpPay name="webpay" />
+        </Col>
       </Card.Footer>
     </StyledCard>
   )
