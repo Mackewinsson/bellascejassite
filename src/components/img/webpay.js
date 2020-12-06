@@ -5,6 +5,7 @@ import styled from "styled-components"
 
 const StyledWebpay = styled(Img)`
   width: 100%;
+  margin-right: 10px;
 `
 
 const WebPay = ({ name }) => {
@@ -15,7 +16,7 @@ const WebPay = ({ name }) => {
           query GET_WEBPAY {
             webpay: file(relativePath: { eq: "webpay.png" }) {
               childImageSharp {
-                fluid(maxWidth: 100) {
+                fluid(maxWidth: 50) {
                   ...GatsbyImageSharpFluid
                 }
               }

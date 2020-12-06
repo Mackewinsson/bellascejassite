@@ -5,6 +5,6 @@ import React from "react"
 const StyledButton = styled(props => <Button {...props} />)`
   font-weight: bold;
   justify-self: center;
-  border-radius: 15px;
+  border-radius: 25px;
 `
 export default StyledButton

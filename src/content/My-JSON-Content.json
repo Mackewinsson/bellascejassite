@@ -296,6 +296,7 @@
           "daysOfAccess": "2 días presencial + 3 meses acceso online",
           "maxStudents": 8,
           "price": "550.000",
+          "flow": "https://www.flow.cl/btn.php?token=c9bqsi3",
           "bullets": [
             "Todos los beneficios ONLINE PRO",
             "Dos días de practicas presenciales con la profesora",
@@ -312,8 +313,9 @@
           "place": "Por definir",
           "time": "9am a 6pm",
           "daysOfAccess": "2 dias presencial + 3 meses acceso online",
-          "maxStudents": 2,
+          "maxStudents": 3,
           "price": "1.500.000",
+          "flow": "https://www.flow.cl/btn.php?token=jgcrqva",
           "bullets": [
             "Todos los beneficios anteriores",
             "Dos días de practicas presenciales con la profesora",

@@ -17,7 +17,7 @@ const modalidad = curso.modalidades
 const cursodemicrobladingojoslabios = () => {
   return (
     <>
-      <SEO title="Curso de micropigmentación" />
+      <SEO title="Curso de microblading en ojos y labios" />
       <Container>
         <Row className="pt-5 text-center">
           <Col xs={12} className="text-center justify-content-center">
@@ -53,10 +53,10 @@ const cursodemicrobladingojoslabios = () => {
             <p className="text-justify">
               El microblading es la técnica de maquillaje permanente mas
               demandada y lucrativa en la actualidad. En este curso aprenderás
-              la técnica de microblading para la construcción parcial o total de
-              cejas pelo a pelo. Mediante un lenguaje ameno y cercano podrás ir
-              descubriendo cada una de las secciones de aprendizaje que hemos
-              diseñado especialmente para ti
+              la técnica de microblading para la pigmentación del delineado de
+              ojos asi como tambien el delineado y relleno de labios. Mediante
+              un lenguaje ameno y cercano podrás ir descubriendo cada una de las
+              secciones de aprendizaje que hemos diseñado especialmente para ti
             </p>
           </Col>
           <Col xs={12}>
@@ -121,7 +121,7 @@ const cursodemicrobladingojoslabios = () => {
                 return (
                   <ModalidadCard
                     name={el.name}
-                    date={el.date}
+                    date={curso.date}
                     place={el.place}
                     time={el.time}
                     daysOfAccess={el.daysOfAccess}

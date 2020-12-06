@@ -122,7 +122,7 @@ const cursodemicroblading = () => {
                 return (
                   <ModalidadCard
                     name={el.name}
-                    date={el.date}
+                    date={curso.date}
                     place={el.place}
                     time={el.time}
                     daysOfAccess={el.daysOfAccess}

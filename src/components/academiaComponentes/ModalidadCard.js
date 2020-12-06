@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Col } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import styled from "styled-components"
 import StyledButton from "../common/Button"
 import WebpPay from "../img/webpay"
@@ -59,29 +59,29 @@ const ModalidadCard = ({
             <li>Horario: {time}</li>
             <li>Profesora: {teacher}</li>
             <li>Inversion: ${price}</li>
+            <li>Fecha: {date}</li>
           </ul>
         </small>
-      </Card.Body>
-      <Card.Footer className="d-flex justify-content-center">
         <StyledButton
           href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de ${courseName} [${name}] Bellas Cejas Academy`}
           target="_blank"
           rel="noreferrer"
-          className="mr-5"
+          className="btn btn-info mt-4 mb-4"
         >
           + Info
         </StyledButton>
+      </Card.Body>
+      <Card.Footer className="d-flex justify-content-center">
+        <WebpPay name="webpay" />
+
         <StyledButton
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="mr-5 btn btn-outline-warning"
+          className="btn btn-outline-warning"
         >
           Matricularse
         </StyledButton>
-        <Col>
-          <WebpPay name="webpay" />
-        </Col>
       </Card.Footer>
     </StyledCard>
   )
