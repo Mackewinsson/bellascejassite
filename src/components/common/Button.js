@@ -9,5 +9,6 @@ const StyledButton = styled(props => <Button {...props} />)`
   display: flex;
   align-content: center;
   align-items: center;
+  justify-content: center;
 `
 export default StyledButton

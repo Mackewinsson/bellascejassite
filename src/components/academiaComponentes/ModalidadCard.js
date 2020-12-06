@@ -66,9 +66,9 @@ const ModalidadCard = ({
           href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de ${courseName} [${name}] Bellas Cejas Academy`}
           target="_blank"
           rel="noreferrer"
-          className="btn btn-info mt-4 mb-4"
+          className="btn btn-outline-info mb-4"
         >
-          + Info
+          + Información
         </StyledButton>
       </Card.Body>
       <Card.Footer className="d-flex justify-content-center">
