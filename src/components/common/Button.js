@@ -6,5 +6,8 @@ const StyledButton = styled(props => <Button {...props} />)`
   font-weight: bold;
   justify-self: center;
   border-radius: 25px;
+  display: flex;
+  align-content: center;
+  align-items: center;
 `
 export default StyledButton
