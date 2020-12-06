@@ -16,7 +16,7 @@ const WebPay = ({ name }) => {
           query GET_WEBPAY {
             webpay: file(relativePath: { eq: "webpay.png" }) {
               childImageSharp {
-                fluid(maxWidth: 50) {
+                fluid(maxWidth: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
