@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Button } from "react-bootstrap"
 import React from "react"
 
@@ -10,5 +10,13 @@ const StyledButton = styled(props => <Button {...props} />)`
   align-content: center;
   align-items: center;
   justify-content: center;
+  ${p =>
+    p.featured
+      ? css`
+          border-bottom: 5px solid #ffd700;
+        `
+      : css`
+          border-bottom: none;
+        `}
 `
 export default StyledButton

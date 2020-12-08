@@ -11,7 +11,7 @@ const Microblading = () => (
         <Col>
           <h2>Microblading</h2>
           <p className="mt-5 mb-5">
-            Proximamente aqui estara todo lo que necesitas saber del
+            Proximamente aqui estará todo lo que necesitas saber del
             microblading
           </p>
           <a href="https://api.whatsapp.com/send?phone=56990422712&text=Hola vengo de la pagina web y quiero mas informacion Bellas Cejas">

@@ -1,15 +1,9 @@
 import React from "react"
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  ResponsiveEmbed,
-  CardDeck,
-} from "react-bootstrap"
+import { Container, Row, Col, ResponsiveEmbed, CardDeck } from "react-bootstrap"
 import ModalidadCard from "../components/academiaComponentes/ModalidadCard"
 import coursesData from "../content/My-JSON-Content.json"
 import SEO from "../components/seo"
+import StyledButton from "../components/common/Button"
 
 const curso = coursesData.courses[0]
 const modalidad = curso.modalidades
@@ -65,9 +59,15 @@ const cursodemicroblading = () => {
             {curso.modalidades.map(el => {
               return (
                 <Col key={el.name}>
-                  <Button className="mb-2" href={`#${el._ID}`}>
-                    {el.name}
-                  </Button>
+                  {el.featured ? (
+                    <StyledButton className="mb-2" href={`#${el._ID}`} featured>
+                      {el.name}
+                    </StyledButton>
+                  ) : (
+                    <StyledButton className="mb-2" href={`#${el._ID}`}>
+                      {el.name}
+                    </StyledButton>
+                  )}
                 </Col>
               )
             })}
