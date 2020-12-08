@@ -19,7 +19,7 @@ const StyledFooterLink = styled(props => <Link {...props} />)`
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.1em;
-    border: 1px solid #ffd700;
+    border-bottom: 5px solid #ffd700;
   }
 
   > span {

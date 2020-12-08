@@ -17,6 +17,9 @@ const FooterMenu = styled.nav`
   width: 100%;
   min-height: 80px;
   overflow-x: auto;
+  @media (min-width: 768px) {
+    display: none;
+  }
 `
 
 const footer = ({ siteTitle }) => {

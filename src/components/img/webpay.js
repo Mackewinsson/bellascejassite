@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledWebpay = styled(Img)`
-  width: 100%;
+  width: 90%;
   margin-right: 10px;
 `
 

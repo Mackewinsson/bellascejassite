@@ -7,10 +7,12 @@ const StyledTebori = styled(Img)`
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  /* transform: rotate(-90deg);
-  z-index: -200;
-  position: absolute !important;
-  bottom: 300px; */
+
+  @media (min-width: 768px) {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `
 
 const Tebori = ({ name }) => {

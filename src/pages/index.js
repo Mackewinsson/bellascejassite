@@ -19,6 +19,7 @@ const IndexPage = () => (
         href={`https://api.whatsapp.com/send?phone=56990422712&text=Hola vengo de la pagina web y quiero mas informacion de Bellas Cejas`}
         target="_blank"
         rel="noreferrer"
+        className="mt-4"
       >
         Microblading
       </StyledButton>
