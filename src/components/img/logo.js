@@ -5,6 +5,7 @@ import styled from "styled-components"
 
 const StyledLogo = styled(Img)`
   margin-top: 10vh;
+
   @media (min-width: 768px) {
     margin-top: 10vh;
     width: 60%;
