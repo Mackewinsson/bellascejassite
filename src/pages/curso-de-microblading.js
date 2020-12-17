@@ -55,7 +55,11 @@ const cursodemicroblading = () => {
           </Col>
           <Col xs={12}>
             <hr />
-            <h6 className="mt-4 mb-4">Modalidades para todos y todas</h6>
+            <h6 className="mt-4">Modalidades disponibles</h6>
+            <small className="mb-5">
+              Consulta próxima fecha de modalidad <br />
+              <strong>GRUPAL GOLD</strong>.
+            </small>
             {curso.modalidades.map(el => {
               return (
                 <Col key={el.name}>
