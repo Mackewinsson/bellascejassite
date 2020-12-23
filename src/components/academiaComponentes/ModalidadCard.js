@@ -59,7 +59,7 @@ const ModalidadCard = ({
             <li>Horario: {time}</li>
             <li>Profesora: {teacher}</li>
             <li>Inversion: ${price}</li>
-            <li>Fecha: {date}</li>
+            {id === "grupalgold" ? <li>Fecha: {date}</li> : " "}
           </ul>
         </small>
         <StyledButton
