@@ -60,16 +60,18 @@ const cursodemicroblading = () => {
               Consulta próxima fecha de modalidad <br />
               <strong>GRUPAL GOLD</strong>.
             </small>
-            {curso.modalidades.map(el => {
+            {curso.modalidades.map((el, i) => {
               return (
                 <Col key={el.name}>
                   {el.featured ? (
                     <StyledButton className="mb-2" href={`#${el._ID}`} featured>
-                      {el.name}
+                      <span class="badge bg-dark text-light">{i + 1}</span>
+                      {` ${el.name}`}
                     </StyledButton>
                   ) : (
                     <StyledButton className="mb-2" href={`#${el._ID}`}>
-                      {el.name}
+                      <span class="badge bg-dark text-light">{i + 1}</span>
+                      {` ${el.name}`}
                     </StyledButton>
                   )}
                 </Col>
@@ -122,7 +124,7 @@ const cursodemicroblading = () => {
           <Col xs={12} className="mt-5">
             <h5 className="mt-4 mb-4">Reserva ahora</h5>
             <CardDeck>
-              {modalidad.map(el => {
+              {modalidad.map((el, i) => {
                 return (
                   <ModalidadCard
                     name={el.name}
@@ -138,6 +140,7 @@ const cursodemicroblading = () => {
                     courseName={curso.name}
                     id={el._ID}
                     link={el.flow}
+                    index={i + 1}
                   />
                 )
               })}

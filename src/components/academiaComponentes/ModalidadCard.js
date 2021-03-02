@@ -34,11 +34,13 @@ const ModalidadCard = ({
   courseName,
   id,
   link,
+  index,
 }) => {
   return (
     <StyledCard border="primary" className="mt-5">
       <Card.Header className="text-uppercase font-weight-bold" id={`${id}`}>
-        {name}
+        <span class="badge bg-dark text-light">{index}</span>
+        {` ${name}`}
       </Card.Header>
       <Card.Body>
         <h6 className="mb-4">Beneficios</h6>

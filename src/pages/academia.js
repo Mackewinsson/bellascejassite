@@ -1,12 +1,12 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import { Container, Row, Col, CardDeck } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import CourseCard from "../components/academiaComponentes/CourseCard"
 import coursesData from "../content/My-JSON-Content.json"
 
 const Academia = () => {
-  const coursesCards = coursesData.courses.map(course => {
+  const coursesCards = coursesData.courses.map((course, i) => {
     return (
       <CourseCard
         key={course.id}
@@ -17,6 +17,7 @@ const Academia = () => {
         description={course.description}
         teacher={course.teacher}
         path={course.path}
+        index={i + 1}
       />
     )
   })
@@ -31,9 +32,9 @@ const Academia = () => {
             <h4>Cursos disponibles</h4>
             <small>By Yulexi Márquez</small>
           </Col>
-          <Col xs={12}>
-            <CardDeck className="mt-5">{coursesCards}</CardDeck>
-          </Col>
+        </Row>
+        <Row as="div" className="row-cols-1 row-cols-md-3">
+          {coursesCards}
         </Row>
       </Container>
     </>

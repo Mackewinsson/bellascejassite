@@ -5,6 +5,7 @@ import StyledLink from "../common/StyledLink"
 
 const StyledCard = styled(Card)`
   border-radius: 25px;
+  font-family: Helvetica;
 
   &:hover {
     box-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px darkgray;
@@ -18,6 +19,11 @@ const StyledCard = styled(Card)`
   > p.card-text {
     font-size: 12px;
   }
+  > p.card-text > strong {
+    /* font-weight: bold !important; */
+    color: blue;
+    background-color: black;
+  }
 `
 
 const CourseCard = ({
@@ -28,26 +34,38 @@ const CourseCard = ({
   description,
   teacher,
   path,
+  index,
 }) => {
   return (
-    <StyledCard border="primary">
-      <Card.Header>{name}</Card.Header>
-      <Card.Body>
-        <Card.Text>{description}</Card.Text>
-        <small className="text-muted">{`Inversion: ${price}`}</small>
-        <br />
-        <small className="text-muted">
-          {`Lugar: ${place}`}
-          <br />
-          {`Fecha: ${date}`}
-        </small>
-        <br />
-        <small>Profesora: {teacher}</small>
-      </Card.Body>
-      <Card.Footer className="d-flex justify-content-center">
-        <StyledLink to={path}>VER DETALLES</StyledLink>
-      </Card.Footer>
-    </StyledCard>
+    <div className="col mb-4">
+      <StyledCard border="primary" className="mt-5">
+        <Card.Header className="text-center">
+          <span class="badge bg-dark text-light">{index}</span>
+          {` ${name}`}
+        </Card.Header>
+        <Card.Body>
+          <div className="text-left">
+            <b>Descripción: </b>
+            {description}
+            <br />
+            <b>Inversion: </b>
+            {price}
+            <br />
+            <b>Lugar: </b>
+            {place}
+            <br />
+            <b>Fecha: </b>
+            {date}
+            <br />
+            <b>Teacher: </b>
+            {teacher}
+          </div>
+        </Card.Body>
+        <Card.Footer className="d-flex justify-content-center">
+          <StyledLink to={path}>VER DETALLES</StyledLink>
+        </Card.Footer>
+      </StyledCard>
+    </div>
   )
 }
 

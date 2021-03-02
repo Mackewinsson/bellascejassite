@@ -8,6 +8,10 @@ body {
   scroll-behavior: smooth;
 }
 
+b {
+  font-weight: bold !important;
+}
+
 main {
   padding-bottom: 100px;
 }
