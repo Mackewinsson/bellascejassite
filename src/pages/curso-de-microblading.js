@@ -58,7 +58,7 @@ const cursodemicroblading = () => {
             <h6 className="mt-4">Modalidades disponibles</h6>
             <small className="mb-5">
               Consulta próxima fecha de modalidad <br />
-              <strong>GRUPAL GOLD</strong>.
+              <strong>Presencial GOLD</strong>.
             </small>
             {curso.modalidades.map((el, i) => {
               return (
