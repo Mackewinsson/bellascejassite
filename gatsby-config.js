@@ -33,6 +33,12 @@ module.exports = {
         pathToConfigModule: "src/utils/typography.js",
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "1544616845587635",
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-fontawesome-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
