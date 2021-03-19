@@ -1,5 +1,5 @@
 import React from "react"
-import { Card } from "react-bootstrap"
+import { Card, Badge } from "react-bootstrap"
 import styled from "styled-components"
 import StyledLink from "../common/StyledLink"
 
@@ -35,7 +35,9 @@ const CourseCard = ({
   teacher,
   path,
   index,
+  modalidad,
 }) => {
+  console.log(modalidad)
   return (
     <div className="col mb-4">
       <StyledCard border="primary" className="mt-5">
@@ -55,7 +57,17 @@ const CourseCard = ({
             {place}
             <br />
             <b>Fecha: </b>
-            {date}
+            {!modalidad ? (
+              <>
+                <Badge pill variant="danger">
+                  No disponible
+                </Badge>
+                <br />
+                <small>(Solo online mientras dure cuarentena)</small>
+              </>
+            ) : (
+              date
+            )}
             <br />
             <b>Teacher: </b>
             {teacher}

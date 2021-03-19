@@ -141,6 +141,7 @@ const cursodemicroblading = () => {
                     id={el._ID}
                     link={el.flow}
                     index={i + 1}
+                    disponiblidad={el.disponiblidad}
                   />
                 )
               })}

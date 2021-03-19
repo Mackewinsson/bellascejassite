@@ -4,7 +4,7 @@
       "id": "5401",
       "name": "Curso de Microblading",
       "price": "Depende de la modalidad",
-      "date": "13 y 14 de Marzo 2021 (Sujeto a cambios por Cuarentena)",
+      "date": "(Sujeto a cambios por Cuarentena COVID19)",
       "place": "Santiago",
       "description": "Curso presencial, practico con kit y materiales incluidos",
       "teacher": "Yulexi Marquez",
@@ -59,45 +59,8 @@
 
       "modalidades": [
         {
-          "name": "Online",
-          "featured": false,
-          "_ID": "online",
-          "date": "Acceso inmediato",
-          "place": "En linea",
-          "time": "Tu elijes",
-          "daysOfAccess": "3 Meses",
-          "maxStudents": "Unlimited",
-          "price": "150.000",
-          "flow": "https://www.flow.cl/btn.php?token=ucz0siv",
-          "bullets": [
-            "Clases detalladas en video FullHD",
-            "10 Ejercicios practicos",
-            "Diploma de certificacion digital",
-            "Materiales se venden por separado"
-          ]
-        },
-        {
-          "name": "Online con asesoria ★",
-          "featured": false,
-          "_ID": "onlinepro",
-          "date": "Acceso inmediato",
-          "place": "En linea",
-          "time": "Tu elijes",
-          "daysOfAccess": "6 Meses",
-          "maxStudents": "Unlimited",
-          "price": "250.000",
-          "flow": "https://www.flow.cl/btn.php?token=ag7rqm1",
-
-          "bullets": [
-            "Clases detalladas en video FullHD",
-            "10 Ejercicios practicos",
-            "Asesoria via whatsapp",
-            "Diploma de certificacion digital",
-            "Materiales se venden por separado"
-          ]
-        },
-        {
           "name": "Presencial GOLD ★★",
+          "disponiblidad": false,
           "featured": true,
           "_ID": "grupalgold",
           "date": "Por reserva",
@@ -120,6 +83,7 @@
         },
         {
           "name": "Personalizado ★★★",
+          "disponiblidad": false,
           "featured": false,
           "date": "Por reserva",
           "_ID": "oneonone",
@@ -137,6 +101,46 @@
             "Diploma de certificación en asepsia",
             "Kit con Materiales",
             "Coffee Break e hidratación"
+          ]
+        },
+        {
+          "name": "Online",
+          "disponiblidad": true,
+          "featured": false,
+          "_ID": "online",
+          "date": "Acceso inmediato",
+          "place": "En linea",
+          "time": "Tu elijes",
+          "daysOfAccess": "6 Meses",
+          "maxStudents": "Unlimited",
+          "price": "200.000",
+          "flow": "https://www.flow.cl/btn.php?token=ucz0siv",
+          "bullets": [
+            "Clases detalladas en video FullHD",
+            "10 Ejercicios practicos",
+            "Diploma de certificacion digital",
+            "Materiales se venden por separado"
+          ]
+        },
+        {
+          "name": "Online con asesoria ★",
+          "disponiblidad": true,
+          "featured": false,
+          "_ID": "onlinepro",
+          "date": "Acceso inmediato",
+          "place": "En linea",
+          "time": "Tu elijes",
+          "daysOfAccess": "6 Meses",
+          "maxStudents": "Unlimited",
+          "price": "300.000",
+          "flow": "https://www.flow.cl/btn.php?token=ag7rqm1",
+
+          "bullets": [
+            "Clases detalladas en video FullHD",
+            "10 Ejercicios practicos",
+            "Asesoria via whatsapp",
+            "Diploma de certificacion digital",
+            "Materiales se venden por separado"
           ]
         }
       ]
@@ -195,6 +199,7 @@
       "modalidades": [
         {
           "name": "Grupal GOLD ★★",
+          "disponiblidad": false,
           "featured": true,
           "_ID": "grupalgold",
           "date": "Por reserva",
@@ -215,6 +220,7 @@
         },
         {
           "name": "One On One ★★★",
+          "disponiblidad": false,
           "featured": false,
           "_ID": "oneonone",
           "date": "Por reserva",
@@ -239,7 +245,7 @@
       "id": "5403",
       "name": "Curso de Microblading en Concepción",
       "price": "Depende de la modalidad",
-      "date": "24 y 25 de enero 2021 (Dependiendo de estado de pandemia)",
+      "date": "No disponible hasta nuevo aviso",
       "place": "Concepción",
       "description": "Curso presencial, practico con kit y materiales incluidos",
       "teacher": "Yulexi Marquez",
@@ -296,6 +302,7 @@
       "modalidades": [
         {
           "name": "Grupal GOLD ★★",
+          "disponiblidad": false,
           "featured": true,
           "date": "Por reserva",
           "place": "Por definir",
@@ -316,6 +323,7 @@
         },
         {
           "name": "One On One ★★★",
+          "disponiblidad": false,
           "featured": false,
           "date": "Por reserva",
           "place": "Por definir",
@@ -396,6 +404,7 @@
       "modalidades": [
         {
           "name": "Grupal GOLD ★★",
+          "disponiblidad": false,
           "featured": true,
           "date": "Por reserva",
           "place": "Wework Vivo Imperio, Santiago Centro",
@@ -413,6 +422,7 @@
         },
         {
           "name": "One On One ★★★",
+          "disponiblidad": false,
           "featured": false,
           "date": "Por reserva",
           "place": "Wework Vivo Imperio, Santiago Centro",
@@ -491,6 +501,7 @@
       "modalidades": [
         {
           "name": "Grupal GOLD ★★",
+          "disponiblidad": false,
           "date": "Por reserva",
           "place": "Wework Vivo Imperio, Santiago Centro",
           "time": "9am a 6pm",
@@ -506,6 +517,7 @@
         },
         {
           "name": "One On One ★★★",
+          "disponiblidad": false,
           "date": "Por reserva",
           "place": "Wework Vivo Imperio, Santiago Centro",
           "time": "9am a 6pm",

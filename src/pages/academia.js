@@ -18,6 +18,7 @@ const Academia = () => {
         teacher={course.teacher}
         path={course.path}
         index={i + 1}
+        modalidad={course.modalidades[0].disponiblidad}
       />
     )
   })

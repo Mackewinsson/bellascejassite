@@ -1,5 +1,5 @@
 import React from "react"
-import { Card } from "react-bootstrap"
+import { Card, Badge } from "react-bootstrap"
 import styled from "styled-components"
 import StyledButton from "../common/Button"
 import WebpPay from "../img/webpay"
@@ -19,6 +19,9 @@ const StyledCard = styled(Card)`
   > p.card-text {
     font-size: 12px;
   }
+  > div.card-header {
+    border-radius: 25px 25px 0 0;
+  }
 `
 
 const ModalidadCard = ({
@@ -35,12 +38,18 @@ const ModalidadCard = ({
   id,
   link,
   index,
+  disponiblidad,
 }) => {
   return (
     <StyledCard border="primary" className="mt-5">
       <Card.Header className="text-uppercase font-weight-bold" id={`${id}`}>
-        <span class="badge bg-dark text-light">{index}</span>
-        {` ${name}`}
+        <small>
+          <span class="badge bg-dark text-light">{index}</span>
+          {` ${name} `}
+          <Badge pill variant="danger">
+            {disponiblidad ? "disponible" : "No disponible"}
+          </Badge>{" "}
+        </small>
       </Card.Header>
       <Card.Body>
         <h6 className="mb-4">Beneficios</h6>
@@ -61,7 +70,20 @@ const ModalidadCard = ({
             <li>Horario: {time}</li>
             <li>Profesora: {teacher}</li>
             <li>Inversion: ${price}</li>
-            {id === "grupalgold" ? <li>Fecha: {date}</li> : " "}
+            {id === "grupalgold" ? (
+              <li>
+                Fecha:{" "}
+                {disponiblidad ? (
+                  date
+                ) : (
+                  <Badge pill variant="danger">
+                    No disponible
+                  </Badge>
+                )}
+              </li>
+            ) : (
+              " "
+            )}
           </ul>
         </small>
         <StyledButton
