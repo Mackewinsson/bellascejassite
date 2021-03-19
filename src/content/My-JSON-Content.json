@@ -61,7 +61,7 @@
         {
           "name": "Presencial GOLD ★★",
           "disponiblidad": false,
-          "featured": true,
+          "featured": false,
           "_ID": "grupalgold",
           "date": "Por reserva",
           "place": "Wework Vivo Imperio, Santiago Centro",
@@ -106,7 +106,7 @@
         {
           "name": "Online",
           "disponiblidad": true,
-          "featured": false,
+          "featured": true,
           "_ID": "online",
           "date": "Acceso inmediato",
           "place": "En linea",
@@ -125,7 +125,7 @@
         {
           "name": "Online con asesoria ★",
           "disponiblidad": true,
-          "featured": false,
+          "featured": true,
           "_ID": "onlinepro",
           "date": "Acceso inmediato",
           "place": "En linea",

@@ -60,10 +60,19 @@ const CourseCard = ({
             {!modalidad ? (
               <>
                 <Badge pill variant="danger">
-                  No disponible
+                  Presencial no disponible
                 </Badge>
+
                 <br />
-                <small>(Solo online mientras dure cuarentena)</small>
+                {index < 2 ? (
+                  <Badge pill variant="success">
+                    Online disponible
+                  </Badge>
+                ) : (
+                  <Badge pill variant="danger">
+                    Online no disponible
+                  </Badge>
+                )}
               </>
             ) : (
               date

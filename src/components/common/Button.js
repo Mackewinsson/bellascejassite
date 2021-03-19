@@ -13,7 +13,7 @@ const StyledButton = styled(props => <Button {...props} />)`
   ${p =>
     p.featured
       ? css`
-          border-bottom: 5px solid #ffd700;
+          border-bottom: 5px solid lightgreen;
         `
       : css`
           border-bottom: none;
