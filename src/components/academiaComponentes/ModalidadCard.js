@@ -46,7 +46,7 @@ const ModalidadCard = ({
         <small>
           <span class="badge bg-dark text-light">{index}</span>
           {` ${name} `}
-          <Badge pill variant="danger">
+          <Badge pill variant={disponiblidad ? "success" : "danger"}>
             {disponiblidad ? "disponible" : "No disponible"}
           </Badge>{" "}
         </small>
