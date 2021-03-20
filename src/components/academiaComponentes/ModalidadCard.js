@@ -41,73 +41,75 @@ const ModalidadCard = ({
   disponiblidad,
 }) => {
   return (
-    <StyledCard border="primary" className="mt-5">
-      <Card.Header className="text-uppercase font-weight-bold" id={`${id}`}>
-        <small>
-          <span class="badge bg-dark text-light">{index}</span>
-          {` ${name} `}
-          <Badge pill variant={disponiblidad ? "success" : "danger"}>
-            {disponiblidad ? "disponible" : "No disponible"}
-          </Badge>{" "}
-        </small>
-      </Card.Header>
-      <Card.Body>
-        <h6 className="mb-4">Beneficios</h6>
-        <ul className="text-left">
-          {bullets.map(el => {
-            return <li key={el}>{el}</li>
-          })}
-        </ul>
-        <br />
-
-        <h6 className="mb-4">Detalles</h6>
-        {/* <small className="text-muted text-left"> */}
-        <small>
-          <ul className="list-group text-left">
-            <li>Máximo de estudiantes: {maxStudents}</li>
-            <li>Acceso: {daysOfAccess}</li>
-            <li>Lugar: {place}</li>
-            <li>Horario: {time}</li>
-            <li>Profesora: {teacher}</li>
-            <li>Inversion: ${price}</li>
-            {id === "grupalgold" || id === "oneonone" ? (
-              <li>
-                Fecha:{" "}
-                {disponiblidad ? (
-                  date
-                ) : (
-                  <Badge pill variant="danger">
-                    No disponible
-                  </Badge>
-                )}
-              </li>
-            ) : (
-              <li>Fecha: Comienza hoy mismo</li>
-            )}
+    <div className="col mb-4">
+      <StyledCard border="primary" className="mt-5">
+        <Card.Header className="text-uppercase font-weight-bold" id={`${id}`}>
+          <small>
+            <span class="badge bg-dark text-light">{index}</span>
+            {` ${name} `}
+            <Badge pill variant={disponiblidad ? "success" : "danger"}>
+              {disponiblidad ? "disponible" : "No disponible"}
+            </Badge>{" "}
+          </small>
+        </Card.Header>
+        <Card.Body>
+          <h6 className="mb-4">Beneficios</h6>
+          <ul className="text-left">
+            {bullets.map(el => {
+              return <li key={el}>{el}</li>
+            })}
           </ul>
-        </small>
-        <StyledButton
-          href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de ${courseName} [${name}] Bellas Cejas Academy`}
-          target="_blank"
-          rel="noreferrer"
-          className="btn btn-outline-info mb-4"
-        >
-          + Información
-        </StyledButton>
-      </Card.Body>
-      <Card.Footer className="d-flex justify-content-center">
-        <WebpPay name="webpay" />
+          <br />
 
-        <StyledButton
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="btn btn-outline-warning"
-        >
-          Matricularse
-        </StyledButton>
-      </Card.Footer>
-    </StyledCard>
+          <h6 className="mb-4">Detalles</h6>
+          {/* <small className="text-muted text-left"> */}
+          <small>
+            <ul className="list-group text-left">
+              <li>Máximo de estudiantes: {maxStudents}</li>
+              <li>Acceso: {daysOfAccess}</li>
+              <li>Lugar: {place}</li>
+              <li>Horario: {time}</li>
+              <li>Profesora: {teacher}</li>
+              <li>Inversion: ${price}</li>
+              {id === "grupalgold" || id === "oneonone" ? (
+                <li>
+                  Fecha:{" "}
+                  {disponiblidad ? (
+                    date
+                  ) : (
+                    <Badge pill variant="danger">
+                      No disponible
+                    </Badge>
+                  )}
+                </li>
+              ) : (
+                <li>Fecha: Comienza hoy mismo</li>
+              )}
+            </ul>
+          </small>
+          <StyledButton
+            href={`https://api.whatsapp.com/send?phone=56949363030&text=Quiero mas informacion del curso de ${courseName} [${name}] Bellas Cejas Academy`}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline-info mb-4"
+          >
+            + Información
+          </StyledButton>
+        </Card.Body>
+        <Card.Footer className="d-flex justify-content-center">
+          <WebpPay name="webpay" />
+
+          <StyledButton
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline-warning"
+          >
+            Matricularse
+          </StyledButton>
+        </Card.Footer>
+      </StyledCard>
+    </div>
   )
 }
 

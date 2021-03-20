@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, ResponsiveEmbed, CardDeck } from "react-bootstrap"
+import { Container, Row, Col, ResponsiveEmbed } from "react-bootstrap"
 import ModalidadCard from "../components/academiaComponentes/ModalidadCard"
 import coursesData from "../content/My-JSON-Content.json"
 import SEO from "../components/seo"
@@ -119,7 +119,7 @@ const cursodemicroblading = () => {
           </Col>
           <Col xs={12} className="mt-5">
             <h5 className="mt-4 mb-4">Reserva ahora</h5>
-            <CardDeck>
+            <Row as="div" className="row-cols-1 row-cols-md-2">
               {modalidad.map((el, i) => {
                 return (
                   <ModalidadCard
@@ -141,7 +141,7 @@ const cursodemicroblading = () => {
                   />
                 )
               })}
-            </CardDeck>
+            </Row>
           </Col>
         </Row>
       </Container>
