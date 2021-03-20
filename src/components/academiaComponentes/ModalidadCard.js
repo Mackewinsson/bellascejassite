@@ -70,7 +70,7 @@ const ModalidadCard = ({
             <li>Horario: {time}</li>
             <li>Profesora: {teacher}</li>
             <li>Inversion: ${price}</li>
-            {id === "grupalgold" ? (
+            {id === "grupalgold" || id === "oneonone" ? (
               <li>
                 Fecha:{" "}
                 {disponiblidad ? (
@@ -82,7 +82,7 @@ const ModalidadCard = ({
                 )}
               </li>
             ) : (
-              " "
+              <li>Fecha: Comienza hoy mismo</li>
             )}
           </ul>
         </small>

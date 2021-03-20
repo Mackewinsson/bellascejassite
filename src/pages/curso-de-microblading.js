@@ -56,10 +56,6 @@ const cursodemicroblading = () => {
           <Col xs={12}>
             <hr />
             <h6 className="mt-4">Modalidades disponibles</h6>
-            <small className="mb-5">
-              Consulta próxima fecha de modalidad <br />
-              <strong>Presencial GOLD</strong>.
-            </small>
             {curso.modalidades.map((el, i) => {
               return (
                 <Col key={el.name}>
@@ -128,7 +124,7 @@ const cursodemicroblading = () => {
                 return (
                   <ModalidadCard
                     name={el.name}
-                    date={curso.date}
+                    date={el.date}
                     place={el.place}
                     time={el.time}
                     daysOfAccess={el.daysOfAccess}

@@ -12,7 +12,7 @@ const Academia = () => {
         key={course.id}
         name={course.name}
         price={course.price}
-        date={course.date}
+        date={course.modalidades[0].date}
         place={course.place}
         description={course.description}
         teacher={course.teacher}
