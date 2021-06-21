@@ -5,9 +5,13 @@ import Tebori from "../components/img/tebori"
 
 import SEO from "../components/seo"
 import StyledButton from "../components/common/Button"
+import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
   <>
+    <Helmet>
+      <script src="http://192.168.100.9:8097"></script>
+    </Helmet>
     <SEO title="Home" />
     <Logo name="logo" />
     <Tebori name="tebori" />

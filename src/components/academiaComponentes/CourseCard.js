@@ -4,18 +4,22 @@ import styled from "styled-components"
 import StyledLink from "../common/StyledLink"
 
 const StyledCard = styled(Card)`
-  border-radius: 25px;
-  font-family: Helvetica;
-
-  &:hover {
-    box-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px darkgray;
-    transition: boxShadow 2s;
-  }
+  border-radius: 50px;
+  border: none;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 
   > div.card-header {
     font-weight: bold;
+    background: transparent;
+    border-bottom: none;
+    padding: 30px 20px;
   }
 
+  > div.card-footer {
+    font-weight: bold;
+    background: transparent;
+    border-top: none;
+  }
   > p.card-text {
     font-size: 12px;
   }
@@ -24,6 +28,10 @@ const StyledCard = styled(Card)`
     color: blue;
     background-color: black;
   }
+`
+const StyledButton = styled(StyledLink)`
+  background-color: transparent;
+  color: black;
 `
 
 const CourseCard = ({
@@ -41,10 +49,7 @@ const CourseCard = ({
   return (
     <div className="col mb-4">
       <StyledCard border="primary" className="mt-5">
-        <Card.Header className="text-center">
-          <span class="badge bg-dark text-light">{index}</span>
-          {` ${name}`}
-        </Card.Header>
+        <Card.Header className="text-center">{name}</Card.Header>
         <Card.Body>
           <div className="text-left">
             <b>Descripción: </b>
@@ -83,7 +88,7 @@ const CourseCard = ({
           </div>
         </Card.Body>
         <Card.Footer className="d-flex justify-content-center">
-          <StyledLink to={path}>VER DETALLES</StyledLink>
+          <StyledButton to={path}>> VER DETALLES</StyledButton>
         </Card.Footer>
       </StyledCard>
     </div>
