@@ -10,9 +10,12 @@ const StyledCard = styled(Card)`
 
   > div.card-header {
     font-weight: bold;
-    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
     border-bottom: none;
     padding: 30px 20px;
+    border-radius: 50px 50px 0px 0px;
+    text-transform: uppercase;
   }
 
   > div.card-footer {
@@ -88,7 +91,7 @@ const CourseCard = ({
           </div>
         </Card.Body>
         <Card.Footer className="d-flex justify-content-center">
-          <StyledButton to={path}>> VER DETALLES</StyledButton>
+          <StyledButton to={path}>{">"} VER DETALLES</StyledButton>
         </Card.Footer>
       </StyledCard>
     </div>
