@@ -1,17 +1,27 @@
 import React from "react"
+// import Logo from "../components/img/logo"
+// import Tebori from "../components/img/tebori"
+import { StaticImage } from "gatsby-plugin-image"
 
-import Logo from "../components/img/logo"
-import Tebori from "../components/img/tebori"
+import Ring from "../components/img/ring"
 
 import SEO from "../components/seo"
-import StyledButton from "../components/common/Button"
 import { Helmet } from "react-helmet"
 
 import styled from "styled-components"
 
 const StyledBody = styled.div`
   background-color: #2a2a2a;
+  height: 100vh;
+  width: 100%;
+
+  > #ring {
+    position: absolute;
+    top: -50px;
+  }
 `
+
+const StyledRing = styled(StaticImage)``
 
 const IndexPage = () => (
   <>
@@ -20,21 +30,12 @@ const IndexPage = () => (
     </Helmet>
     <SEO title="Home" />
     <StyledBody>
+      <StaticImage src="../images/ring.png" alt="ring" id="ring" />
+      <StaticImage src="../images/cone.png" alt="cone" />
+
       {/* <Logo name="logo" /> */}
       {/* <Tebori name="tebori" /> */}
-      <small className="d-flex justify-content-center mt-5">
-        By Yulexi Marquez
-      </small>
-      <div className="d-flex justify-content-center mt-5">
-        <StyledButton
-          href={`https://api.whatsapp.com/send?phone=56990422712&text=Hola vengo de la pagina web y quiero mas informacion de Bellas Cejas`}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-4"
-        >
-          Microblading
-        </StyledButton>
-      </div>
+      <div className="d-flex justify-content-center pt-5"></div>
     </StyledBody>
   </>
 )

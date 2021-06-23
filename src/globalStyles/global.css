@@ -6,7 +6,8 @@ body {
   height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #2A2A2A;
+  position: relative;
+
 }
 
 b {
