@@ -18,6 +18,11 @@ const Wrapper = styled.div`
   height: 100vh;
 `
 
+const Main = styled.main`
+  margin: 0;
+  padding: 0;
+`
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -33,7 +38,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Wrapper>
-        <main>{children}</main>
+        <Main>{children}</Main>
       </Wrapper>
       <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
     </>
