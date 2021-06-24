@@ -9,9 +9,13 @@ const StyledBody = styled.div`
   background-color: #2a2a2a;
   height: 100vh;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 15%;
   padding-right: 20%;
   padding-left: 20%;
+
+  @media (max-width: 768px) {
+    padding-top: 50%;
+  }
 `
 
 const StyledTitle = styled.h1`

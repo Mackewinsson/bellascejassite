@@ -17,7 +17,7 @@ const ImageWrapperMobile = () => {
         style={{
           position: "absolute",
           top: "-20px",
-          left: "100px",
+          left: "70px",
           width: "100px",
         }}
         imgClassName="ring"
@@ -27,7 +27,7 @@ const ImageWrapperMobile = () => {
         alt="cone"
         style={{
           position: "absolute",
-          top: "120px",
+          top: "150px",
           right: "-20px",
           width: "100px",
         }}
@@ -38,7 +38,7 @@ const ImageWrapperMobile = () => {
         alt="cube"
         style={{
           position: "absolute",
-          top: "500px",
+          top: "550px",
           left: "120px",
           width: "100px",
         }}
