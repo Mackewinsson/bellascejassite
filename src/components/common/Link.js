@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const StyledLink = styled(props => <Link {...props} />)`
-  font-weight: bold;
+  font-weight: 100;
   /* background-image: -webkit-linear-gradient(
     to right,
     #462523 0,
@@ -21,7 +21,9 @@ const StyledLink = styled(props => <Link {...props} />)`
   //Hover styles
   &:hover {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.1em;
   }
 `
 export default StyledLink

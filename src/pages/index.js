@@ -2,14 +2,14 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
-
 import styled from "styled-components"
+import ImageWrapperMobile from "../components/img/ImageWrapperMobile"
 
 const StyledBody = styled.div`
   background-color: #2a2a2a;
   height: 100vh;
   width: 100%;
-  padding-top: 15%;
+  padding-top: 50%;
   padding-right: 20%;
   padding-left: 20%;
 `
@@ -19,7 +19,7 @@ const StyledTitle = styled.h1`
   font-size: 3.7em;
   position: relative;
 
-  &&:before {
+  &:before {
     content: "";
     display: block;
     width: 100px;
@@ -28,6 +28,16 @@ const StyledTitle = styled.h1`
     position: absolute;
     top: 45px;
     left: -120px;
+
+    @media (max-width: 768px) {
+      font-size: 2em;
+      top: 30px;
+      left: -120px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2em;
   }
 `
 
@@ -51,6 +61,16 @@ const StyledButton = styled.a`
     color: white;
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
+`
+
+const ImageWrapperDesktop = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const IndexPage = () => (
@@ -59,36 +79,36 @@ const IndexPage = () => (
       <script src="http://192.168.100.9:8097"></script>
     </Helmet>
     <SEO title="Home" />
-    <StaticImage
-      src="../images/ring.png"
-      alt="ring"
-      style={{
-        position: "absolute",
-        top: "-130px",
-        left: "150px",
-        width: "180px",
-      }}
-    />
-    <StaticImage
-      src="../images/cone.png"
-      alt="cone"
-      style={{
-        position: "absolute",
-        top: "200px",
-        right: "150px",
-        width: "180px",
-      }}
-    />
-    <StaticImage
-      src="../images/cube.png"
-      alt="cube"
-      style={{
-        position: "absolute",
-        bottom: "150px",
-        left: "150px",
-        width: "200px",
-      }}
-    />
+    <ImageWrapperMobile />
+    <ImageWrapperDesktop>
+      <StaticImage
+        src="../images/ring.png"
+        alt="ring"
+        style={{
+          position: "absolute",
+          top: "-130px",
+          left: "150px",
+        }}
+      />
+      <StaticImage
+        src="../images/cone.png"
+        alt="cone"
+        style={{
+          position: "absolute",
+          top: "200px",
+          right: "0px",
+        }}
+      />
+      <StaticImage
+        src="../images/cube.png"
+        alt="cube"
+        style={{
+          position: "absolute",
+          bottom: "0px",
+          left: "150px",
+        }}
+      />
+    </ImageWrapperDesktop>
     <StyledBody>
       <StyledTitle>
         Cejas Perfectas

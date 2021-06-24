@@ -42,3 +42,16 @@ main {
   box-shadow: black;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* .ring {
+    display: none;
+  }
+  .cone {
+    display: none;
+  }
+  .cube {
+    display: none;
+  } */
+}

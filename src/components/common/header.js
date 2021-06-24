@@ -16,38 +16,46 @@ const StyledWrapper = styled(Nav)`
   padding-right: 50px;
 `
 
+const Wrapper = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
 const Header = ({ siteTitle }) => (
-  <Navbar className="navbar-dark" style={{ backgroundColor: "#2A2A2A" }}>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <StyledContainer>
-        <StyledWrapper>
-          <Nav.Link as="div">
-            <StyledLink to="/">Inicio</StyledLink>
-          </Nav.Link>
-          <Nav.Link as="div">
-            <StyledLink to="#">Staff</StyledLink>
-          </Nav.Link>
-          <Nav.Link as="div">
-            <StyledLink to="/academia">Academia</StyledLink>
-          </Nav.Link>
-          <Nav.Link as="div">
-            <StyledLink to="/reservas">Reservas</StyledLink>
-          </Nav.Link>
-          {/* <Nav.Link as="div">
+  <Wrapper>
+    <Navbar className="navbar-dark" style={{ backgroundColor: "#2A2A2A" }}>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <StyledContainer>
+          <StyledWrapper>
+            <Nav.Link as="div">
+              <StyledLink to="/">Inicio</StyledLink>
+            </Nav.Link>
+            <Nav.Link as="div">
+              <StyledLink to="#">Staff</StyledLink>
+            </Nav.Link>
+            <Nav.Link as="div">
+              <StyledLink to="/academia">Academia</StyledLink>
+            </Nav.Link>
+            <Nav.Link as="div">
+              <StyledLink to="/reservas">Reservas</StyledLink>
+            </Nav.Link>
+            {/* <Nav.Link as="div">
             <StyledLink to="/microblading">Microblading</StyledLink>
           </Nav.Link> */}
-          <Nav.Link
-            href="https://api.whatsapp.com/send?phone=56990422712&text=Hola vengo de la pagina web y quiero mas informacion Bellas Cejas"
-            target="_blank"
-            rel="noreferrer"
-          >
-            +56 9 9042 2712
-          </Nav.Link>
-        </StyledWrapper>
-      </StyledContainer>
-    </Navbar.Collapse>
-  </Navbar>
+            <Nav.Link
+              href="https://api.whatsapp.com/send?phone=56990422712&text=Hola vengo de la pagina web y quiero mas informacion Bellas Cejas"
+              target="_blank"
+              rel="noreferrer"
+            >
+              +56 9 9042 2712
+            </Nav.Link>
+          </StyledWrapper>
+        </StyledContainer>
+      </Navbar.Collapse>
+    </Navbar>
+  </Wrapper>
 )
 Header.propTypes = {
   siteTitle: PropTypes.string,
